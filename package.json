@@ -1,11 +1,12 @@
 {
   "name": "cars-app",
   "version": "0.0.0",
+  "homepage": "https://natali-tk.github.io/cars-app/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "build": "ng build --configuration production --base-href=https://natali-tk.github.io/cars-app/",
+    "watch": "ng build ",
     "test": "ng test"
   },
   "private": true,
@@ -21,6 +22,12 @@
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
+  },
+  "keywords": [],
+  "author": "Nataliia Totska <natasha.totska@yahoo.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Natali-tk/cars-app/issues"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.2.6",
