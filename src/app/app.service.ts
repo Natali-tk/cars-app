@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+// import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -6,13 +6,15 @@ import { Injectable } from '@angular/core';
 })
 export class AppService {
 
-  constructor(private http: HttpClient) { }
+  constructor() { }
 
   sendQuery(data: any) {
-    return this.http.post('https://testologia.site/intensive-price', data)
+    const post = localStorage.setItem("contacts", JSON.stringify(data));
+    return post;
   }
 
   getData() {
-    return this.http.get('https://testologia.site/intensive-data')
+    const get = localStorage.getItem("contacts");
+    return get;
   }
 }

@@ -90,17 +90,12 @@ export class AppComponent {
   }
 
   onSubmit() {
+
     if (this.priceForm.valid) {
-      this.appService.sendQuery(this.priceForm.value)
-        .subscribe({
-          next: (response: any) => {
-            alert(response.message);
-            this.priceForm.reset();
-          },
-          error: (response) => {
-            alert(response.error.message)
-          }
-        });
-    }
+      this.appService.sendQuery(this.priceForm.value);
+      this.priceForm.reset();
+      alert("Спасибо за заявку, мы свяжемся с вами в ближайшее время!");
+    };
+
   }
 }
