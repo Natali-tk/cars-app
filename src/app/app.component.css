@@ -309,7 +309,7 @@ section.main {
   .price .container{
     display: flex;
     flex-direction: column;
-    padding-bottom: 254px;
+    padding-bottom: 506px;
   }
   .price-text{
     text-align: center;
@@ -331,5 +331,8 @@ margin-bottom: 32px;
   }
   .menu-item:first-child {
     display: none;
+  }
+  .price .container {
+      padding-bottom: 254px;
   }
 }
