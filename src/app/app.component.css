@@ -117,6 +117,7 @@ section.main {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap:24px;
 }
 
 .car-item {
