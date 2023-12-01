@@ -48,7 +48,7 @@
             <p>{{car.places}}</p>
           </li>
         </ul>
-        <button type="button" class="button car-button" (click)="goScroll(price, car)">Забронировать</button>
+        <button type="button" class="button car-button" (click)="goScroll(price, car)">Забронювати</button>
       </div>
 
     </div>
@@ -59,9 +59,9 @@
     <h2 class="sub-title">Дізнатися ціну та забронювати</h2>
     <p class="price-text">Заповніть дані і ми передзвонимо вам для уточнення всіх деталей бронювання</p>
     <form action="" class="price-form" [formGroup]="priceForm">
-      <input type="text" class="price-input" id="name" placeholder="Ваше имя" formControlName="name" />
+      <input type="text" class="price-input" id="name" placeholder="Ваше і'мя" formControlName="name" />
       <input type="tel" class="price-input" id="phone" placeholder="Ваш телефон" formControlName="phone" />
-      <input type="text" class="price-input" id="car" placeholder="Автомобиль, который вас интересует"
+      <input type="text" class="price-input" id="car" placeholder="Автомобіль, що Вас цікавить"
         formControlName="car" />
       <button class="button" id="price-action" (click)="onSubmit()" [disabled]="!priceForm.valid">Дізнатися ціну</button>
     </form>
